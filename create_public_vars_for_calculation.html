@@ -1,0 +1,68 @@
+</doctype html>
+
+<head>
+
+</head>
+
+<body>
+
+
+
+<script>
+
+//Create two public variables and four functions - add, subtract, multiply and divide which
+//takes these two public variables and perform their respective operations i.e. add,
+//subtract, multiply and divide. 
+
+function Calculate(x, y){
+
+	this.x = x;
+	this.y = y;
+
+	// add function
+
+	this.add = function(){
+
+		var a = x + y;
+		alert(a);
+	};
+
+	// subtract function
+
+	this.subtract = function(){
+
+		var b = x - y;
+		alert(b);
+	};
+
+	// multiply function
+
+	this.multiply = function(){
+		var c = x * y
+		alert(c);
+	};
+
+	//divide function
+
+	this.divide = function(){
+
+		var d = x / y;
+		alert(d);
+	};
+}
+
+var add = new Calculate(12, 4);
+
+add.add();
+
+add.subtract();
+
+add.multiply();
+
+add.divide();
+
+</script>
+
+</body>
+
+</html>

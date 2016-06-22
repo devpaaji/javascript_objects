@@ -1,0 +1,42 @@
+</doctype html>
+
+<head>
+
+</head>
+
+<body>
+
+
+
+<script>
+
+//create a car constructor and add params in it
+
+function Car(make, model, year){
+
+	this.make = make;
+	this.model = model;
+	this.year = year;
+
+	this.display = function(){
+
+ 		alert("My proprties are " + this.make + " "+ this.model + " " + this.year);
+	};
+}
+
+// create a new object from Car
+
+var maruti = new Car("Jason", "ABG", 1967);
+
+//console.log(maruti);
+var bmw = new Car("Alton", "G67", 1947);
+//console.log(bmw);
+
+maruti.display();
+
+
+</script>
+
+</body>
+
+</html>
